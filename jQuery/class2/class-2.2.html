@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>This is our first class</h1>
+
+    <button id="first">Hide</button>
+    <button id="second">Show</button>
+    <button id="third">Color Red</button>
+
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam quam quos est rem numquam voluptates obcaecati qui, ea voluptatum minus iusto ipsam repudiandae! Facere, ut adipisci! Quibusdam error minus sequi!</p>
+
+
+    <!-- ----javascript start -->
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+
+    <script>
+        $('#first').click(function() {
+            $('p').hide();
+            $(this).hide();
+            $('#second').show();
+        });
+
+        $('#second').click(function() {
+            $('p').show();
+            $(this).hide();
+            $('#first').show();
+        });
+
+        $('#third').click(function() {
+            $('p').css({
+                'color': 'yellow'
+            }).html('Text is chenged');
+        });
+    </script>
+
+
+</body>
+
+</html>
